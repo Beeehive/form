@@ -17,6 +17,6 @@ Start-PodeServer {
         if ( $WebEvent.Query['value']) {
             New-PodeWebTextbox -Name "Username" -Value $WebEvent.Query['value'] -ReadOnly
             New-PodeWebTextbox -Name "Days" -Value $WebEvent.Query.Days -ReadOnly
-        } else { New-PodeWebSpinner -Colour 'cornflowerblue' }
+        } else { }
     }
 }
